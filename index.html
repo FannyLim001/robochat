@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoboChat</title>
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d42ce06cb7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <h1>RoboChat</h1>
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="content">
+        <article id="home">
+          <div class="home-image">
+            <img src="assets/img/Chat bot-cuate.svg" alt="" />
+          </div>
+          <div class="home-desc">
+            <h1 class="title">Welcome to RoboChat</h1>
+            <p>
+              This is the right place for you if you need a friend to talk with!
+            </p>
+            <button>Talk</button>
+          </div>
+        </article>
+
+        <div class="header-title">
+          <h1>Features</h1>
+        </div>
+
+        <article id="features">
+          <div class="features-card">
+            <div class="card-container">
+              <div class="card">
+                <div class="card-content">
+                  <h2 class="card-title">
+                    <i class="fa-brands fa-rocketchat fa-xl"></i>
+                  </h2>
+                  <p class="card-description">Chatting freely</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <h2 class="card-title">
+                    <i class="fa-solid fa-circle-info fa-xl"></i>
+                  </h2>
+                  <p class="card-description">Seek Help</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <h2 class="card-title">
+                    <i class="fa-solid fa-truck-medical fa-xl"></i>
+                  </h2>
+                  <p class="card-description">Emergency</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="features-image">
+            <img src="assets/img/Messaging fun-cuate.svg" alt="" />
+          </div>
+        </article>
+
+        <div class="header-title">
+          <h1>RoboChat FAQ</h1>
+        </div>
+
+        <article id="faq">
+          <div class="faq-accordion">
+            <button class="accordion">What is RoboChat?</button>
+            <div class="panel">
+              <p>RoboChat is a chatbot for you</p>
+            </div>
+            <br>
+            <button class="accordion">Does RoboChat give accurate response?</button>
+            <div class="panel">
+              <p>Not always, this is experimental project</p>
+            </div>
+            <br>
+            <button class="accordion">Who can use RoboChat?</button>
+            <div class="panel">
+              <p>All ages can use this chatbot</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <br><br><br><br>
+      <aside>
+        <div class="profile-card">
+          <img src="assets/img/Fanny_Profile.jpg" alt="Fanny" style="width:100%">
+          <h1>Fanny</h1>
+          <p class="title">Web Developer</p>
+          <p>Politeknik Caltex Riau</p>
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <p><button>Kontak</button></p>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>RoboChat</p>
+        <p>&copy; 2023</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</html>
